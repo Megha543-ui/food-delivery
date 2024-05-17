@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Sign-up page
+        </title>
+        <style>
+            body{
+               
+                text-shadow: black;
+                text-align: center;
+            }
+            
+            form {
+			background-color: white;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+        .form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+        .form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+        .form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid powderblue;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+        
+
+        button {
+			color:black;
+			background-color: cyan;
+			border: 1px solid whitesmoke;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+        </style>
+        <center><b> {{msg}} </b></center>
+    </head>
+    <body style="background-image: url({% static 'signup-background-image.jpg' %});">
+        <h1 style="font-size: 40px;"><b>Online Food Delivery</form></b></h1>
+
+	<!-- Create Form -->
+	<form method="POST">
+        {% csrf_token %}
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="uname" >
+				<b>Username</b>
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name" name="name"
+				placeholder="Enter username" required/>
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="email">
+                    <B>E-mail Id</B>
+                </label>
+    
+                <!-- Input Type Email-->
+                <input type="email"
+                    id="email" name="email"
+                    placeholder="Enter your email" required/>
+            </div>
+            <div class="form-control">
+                <label for="phone number" id="pno.">
+                    <B>Phone Number</B>
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="tel"
+                    id="phonenumber" name="pno"
+                    placeholder="Enter your phone number" required/>
+            </div>
+
+            <div class="form-control">
+                <label for="name" id="Address">
+                   <B>Address</B>
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="text"
+                    id="Address" name="Address"
+                    placeholder="Enter your proper Address with pin code" required/>
+                </div>
+            <div class="form-control">
+                <label for="password" id="psw1">
+                    <B>Password</B>
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="password" id="psw" name="psw1" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Your password" required>
+            </div>
+            <div class="form-control">
+                <label for="password" id="psw2">
+                    <B>Confirm Password</B>
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="password" id="psw" name="psw2" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Re-Enter your password" required>
+            </div>
+                 
+                
+                <!-- Multi-line Text Input Control -->
+            <button type="submit" value="submit" style="color: white;">
+                Sign Up
+            </button>
+           </form>
+           <script>
+            function validatiepage()
+            {
+                un = document.getElementById('uname').value;
+                em = document.getElementById('email').value;
+                pn = document.getElementById('pno.').value;
+                Ad = document.getElementById('Address').value;
+                p1 = document.getElementById('psw1').value;
+                p2 = document.getElementById('psw2').value;
+
+                if( un=='' || em=='' || pn=='' || Ad=='' || p1=='' || p2=='')
+                {
+                    alert("Please fill all the fields properly!!");
+                    return false;
+                }
+            }
+           </script>
+    </body>
+
+</html>

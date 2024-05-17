@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'style2.css' %}">
+	<link
+	href="https://fonts.googleapis.com/css2?
+	family=Ubuntu+Mono&display=swap"
+	rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 id="top">Online</h1>
+		<h1 id="top1">Food Delivery</h1>
+	</header>
+	<hr>
+	<nav id="navbar">
+		<img src="{% static 'food-shop-logo.avif' %}">
+		<ul id="navcontent">
+			<li><a href="#">HOME</a></li>
+			<li><a href="{% url 'food-about2' %}">ABOUT</a></li>
+			<li><a href="{% url 'food-menu2' %}">MENU</a></li>
+			<li><a href="{% url 'food-contact2' %}">CONTACT</a></li>
+			<li><a href="{% url 'food-login2' %}"> ACCOUNT</a></li>
+		</ul>
+	</nav>
+	<div id="container1" style="background-image: url('https://cdn.pixabay.com/photo/2021/12/19/15/18/christmas-stars-6881348_1280.jpg')";>
+		<div id="row1">
+			Welcome to Online Food Delivery
+		</div>
+		<!--<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>-->
+		<div id="container3">
+			<div id="row2" style="background-image: url('https://cdn.pixabay.com/photo/2017/03/14/08/10/wood-2142241_1280.jpg')";>
+				<button class="btn"><a href="{% url 'food-payment2' %}" >Payment</a></button>
+			</div>
+			<div id="row3" style="background-image: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg')";>
+				<button class="btn"><a href="{% url 'food-ourblog2' %}">Our Blogs</a></button>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h1 id="top3">Featured Products</h1>
+	<div id="container4">
+		<div id="row4" style="background-image: url('https://static.toiimg.com/photo/msid-87930581/87930581.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row5" style="background-image: url('https://www.indianhealthyrecipes.com/wp-content/uploads/2022/01/paneer-lababdar.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row6" style="background-image: url('https://www.eatthis.com/wp-content/uploads/sites/4/2022/04/burger-fries.jpg?quality=82&strip=all')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row7" style="background-image: url('https://images.herzindagi.info/image/2021/Nov/green-peas-momo-recipe.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row8" style="background-image: url('https://1.bp.blogspot.com/-daSXyQLRoeY/Xaykn_MRnCI/AAAAAAAAHq4/8m_bFMxZMvsuMCrPz-rKGIwCypg5i0TggCLcBGAsYHQ/s1600/Kashmiri%2BPulao.JPG')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row9" style="background-image: url('https://christieathome.com/wp-content/uploads/2022/04/Chicken-Chow-Mein-13.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row10" style="background-image: url('https://i.ytimg.com/vi/csfIOfMnRGg/maxresdefault.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row11" style="background-image: url('https://www.authenticroyal.com/wp-content/uploads/2021/05/LTFA-FY21_Biryani_Web_1280x1600_SinfullySpicy.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row12" style="background-image: url('https://www.sharmispassions.com/wp-content/uploads/2020/03/WhiteSaucePasta6-500x375.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row13" style="background-image: url('https://i0.wp.com/kalimirchbysmita.com/wp-content/uploads/2019/06/Chicken-Lollipop-02.jpg?resize=1024%2C682&ssl=1')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row14" style="background-image: url('https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/exps8708_C2640C49B_RMS.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row15" style="background-image: url('https://lh3.googleusercontent.com/LwFcKCcsq1N_fk34nojMA50kCwbdiLVeGmVgElCrWDAK5Jo3VeZZ9aBhLG1hB7IVdqeFvAusP4H7huS8tYCMNA=w1280-h720-c-rj-v1-e365')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row16" style="background-image: url('https://sa-i1.fnp.com/images/pr/l/v20230306150628/rosy-birthday-cake_1.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row17" style="background-image: url('https://jiosweet.com/images/thumbs/0000598_ghee-sweets-and-namkeen-combo_550.jpeg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+		<div id="row18" style="background-image: url('https://domf5oio6qrcr.cloudfront.net/medialibrary/8931/conversions/Smoothie-post-thumb.jpg')";>
+			<button class="btn"><a href="{% url 'food-payment2' %}">ORDER NOW</a></button>
+		</div>
+	</div>
+	<footer>
+		<div class="footer0">
+		  <h1>Online Food Delivery</h1>
+		</div>
+		<div class="footer1 ">
+		  Connect with us at<div class="social-media">
+			<a href="https://www.facebook.com/">
+			  <ion-icon name="logo-facebook"></ion-icon>
+			</a>
+			<a href="https://www.linkedin.com/">
+			  <ion-icon name="logo-linkedin"></ion-icon>
+			</a>
+			<a href="https://www.youtube.com/">
+			  <ion-icon name="logo-youtube"></ion-icon>
+			</a>
+			<a href="https://www.instagram.com/">
+			  <ion-icon name="logo-instagram"></ion-icon>
+			</a>
+			<a href="https://www.twitter.com/">
+			  <ion-icon name="logo-twitter"></ion-icon>
+			</a>
+		  </div>
+		</div>
+		<div class="footer2">
+		  <div class="product">
+			<div class="heading">Products</div>
+			<div class="div">Sell your Products</div>
+			<div class="div">Advertise</div>
+			<div class="div">Pricing</div>
+			<div class="div">Product Buisness</div>
+		
+		  </div>
+		  <div class="services">
+			<div class="heading">Services</div>
+			<div class="div">Return</div>
+			<div class="div">Cash Back</div>
+			<div class="div">Affiliate Marketing</div>
+			<div class="div">Others</div>
+		  </div>
+		  <div class="Company">
+			<div class="heading">Company</div>
+			<div class="div">Complaint</div>
+			<div class="div">Careers</div>
+			<div class="div">Affiliate Marketing</div>
+			<div class="div">Support</div>
+		  </div>
+		  <div class="Get Help">
+			<div class="heading">Get Help</div>
+			<div class="div">Help Center</div>
+			<div class="div">Privacy Policy</div>
+			<div class="div">Terms</div>
+			<div class="div"><a href="{% url 'food-login2' %}">Login</a></div>
+		  </div>
+		</div>
+		<div class="footer3">Copyright © <h4>Online Food Delivery</h4> 2021-2028</div>
+		</footer>
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

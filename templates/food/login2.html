@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: lightcyan;
+            text-shadow: black;
+            text-align: center;
+        }
+        form {
+                background-color: white;
+                max-width: 400px;
+                margin: 50px auto;
+                padding: 30px 20px;
+                box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .form-control table{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control textarea {
+            border: 1px solid powderblue;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        button {
+            color:white;
+			background-color: cyan;
+			border: 1px solid whitesmoke;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px; 
+            opacity: 1;
+		}
+    </style>
+</head>
+<body style="background-image:url({% static 'login-background-image.jpg' %});">
+    <h1 style="font-size: 40px; color:black;"><b>Online Food Delivery</b></h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-control">
+            <label for="username" id="lable-username">
+                </label>
+                <input type="text" name="uname"
+                    id="username"
+                    placeholder="Enter the username or email or phone"/>
+                    <br>
+
+
+                    <!--now password area-->
+                    <label for="psw" id="label-pass">
+                    </label>
+                    
+                    <!--<input type="password" name="password id="password"
+                    placeholder="Enter the password"/>-->
+                    <input type="password" id="psw" name="psw1"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Your password" required>
+        </div>
+        <div>
+            <!--buttons-->
+            <button type="submit" value="value">Log In</button>
+             <button><a href="{% url 'food-index2' %}" style="color: white;text-decoration: none;">Back</a></button>
+        </div>
+        
+        <div>OR</div>
+        <div><a href="{% url 'food-forgotpassword2' %}" style="color: gray; text-decoration: none;"> Forget password?</a></div>
+    </form>
+    <form>
+        <div>Don't have an account?<a href="{% url 'food-signup2' %}" style="color:black;text-decoration: none;"><b>Sign Up</b></a></div>
+    </form>
+    <script>
+        function validatiepage()
+        {
+            un = document.getElementById('uname').value;
+            p1 = document.getElementById('psw1').value;
+            
+
+            if( un=='' || p1=='' )
+            {
+                alert("Please fill all the fields properly!!");
+                return false;
+            }
+        }
+       </script>
+</body>
+</html>

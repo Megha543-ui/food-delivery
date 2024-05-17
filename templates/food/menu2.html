@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link
+    href="https://fonts.googleapis.com/css2?
+    family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+   
+
+</head>
+<body style="background-image: url({% static 'menu-background-image3.avif' %})">
+    
+    <div id="menu">
+        <h1 id="section">Menu</h1>
+        <div id="menu_row">
+            <div id="menu_col">
+                <h2>Meal</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'kashmiri-biryani.JPG' %}">
+                </div>
+                <div>
+                    <h3>Kashmiri-biryani</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 130 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'paneer-lababdar.jpg' %}">
+                </div>
+                <div>
+                    <h3>Paneer-lababdar</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 120 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'chhole-bhatura.jpg' %}">
+                </div>
+                <div>
+                    <h3>Chhole-bhatura</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 70 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'egg-biryani.jpg' %}">
+                </div>
+                <div>
+                    <h3>Egg-biryani</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 110 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'chicken-lolipop.webp' %}">
+                </div>
+                <div>
+                    <h3>Chicken-lolipop</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 140 Rs.</a></h4>
+                </div>
+                </div>
+                
+            </div>
+            <div id="menu_col"><h2>Snacks</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'pizza-image.webp' %}">
+                </div>
+                <div>
+                    <h3>Pizza</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 100 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'burger-fries.webp' %}">
+                </div>
+                <div>
+                    <h3>Burger-fries</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 90 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'momos.jpg' %}">
+                </div>
+                <div>
+                    <h3>Momos</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 50 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'chowmein.jpg' %}">
+                </div>
+                <div>
+                    <h3>Chowmein</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 60 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'pasta-image.jpg' %}">
+                </div>
+                <div>
+                    <h3>White-sauce-pasta</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 80 Rs.</a></h4>
+                </div>
+                </div>
+                
+        </div>
+            
+            <div id="menu_col"><h2>Dessert</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'strawberry-icecream.jpg' %}">
+                </div>
+                <div>
+                    <h3>Strawberry-icecream</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 50 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'chocolate-icecream.jpg' %}">
+                </div>
+                <div>
+                    <h3>Chocolate-icecream</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 70 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'cake-image.webp' %}">
+                </div>
+                <div>
+                    <h3>Cake</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 400 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'sweets-image.jpeg' %}">
+                </div>
+                <div>
+                    <h3>Sweets</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 350 Rs.</a></h4>
+                </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="{% static 'juice-image.jpg' %}">
+                </div>
+                <div>
+                    <h3>Juices</h3>
+                    <h4><a href="{% url 'food-payment2' %}">Price = 150 Rs.</a></h4>
+                </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
+            
+            
